@@ -1,0 +1,119 @@
+body {
+  position: relative;
+  top: 150px;
+  font-family: "Montserrat", sans-serif;
+}
+.boarder {
+  border: 3px solid #343cee;
+  margin: 0 300px;
+  border-radius: 10px;
+  padding-bottom: 40px;
+}
+input {
+  border-radius: 80px;
+  margin: 40px 30px 0 30px;
+  padding: 15px 400px 10px 40px;
+  border: 5px solid #343deea8;
+  font-size: 20px;
+  font-weight: 500;
+}
+.button {
+  position: relative;
+  font-size: 50px;
+  top: -55px;
+  right: -745px;
+  color: #343dee69;
+}
+.gpsButton {
+  cursor: pointer;
+  color: #343cee;
+  display: inline;
+  position: relative;
+  border: solid white;
+  background-color: white;
+  top: -200px;
+  left: 650px;
+}
+
+h4 {
+  display: inline;
+  margin-left: -22px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(148, 154, 169, 0.8);
+}
+h1 {
+  margin: 10px 30px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: black;
+}
+.cityweather {
+  position: relative;
+  top: -60px;
+  left: 375px;
+  font-size: 60px;
+}
+.temperature {
+  display: inline;
+  font-size: 40px;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  top: -70px;
+  right: -610px;
+}
+
+span a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+  top: -70px;
+  right: -610px;
+}
+span a:hover {
+  color: #343cee;
+}
+
+.additionalinformation {
+  margin: -60px 600px 0 30px;
+}
+
+.windValue {
+  position: relative;
+  left: 50px;
+}
+.pressureValue {
+  position: relative;
+  left: 25px;
+}
+.humidityValue {
+  position: relative;
+  left: 20px;
+}
+
+hr {
+  border: 2px solid #343dee;
+}
+p {
+  margin: 0;
+}
+li {
+  font-size: 15px;
+  list-style: none;
+  font-weight: 300;
+}
+div .col-2 {
+  position: relative;
+  left: 70px;
+  right: 70px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(148, 154, 169, 0.8);
+  text-align: center;
+}
+.nexttemp {
+  color: black;
+  font-size: 15px;
+}
