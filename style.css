@@ -117,3 +117,12 @@ div .col-2 {
   color: black;
   font-size: 15px;
 }
+.coder {
+  position: relative;
+  top: 10px;
+  left: 300px;
+}
+a {
+  text-decoration: none;
+  color: #343cee;
+}
