@@ -8,6 +8,7 @@ body {
   margin: 0 300px;
   border-radius: 10px;
   padding-bottom: 40px;
+  max-width: 835px;
 }
 input {
   border-radius: 80px;
@@ -31,7 +32,7 @@ input {
   position: relative;
   border: solid white;
   background-color: white;
-  top: -200px;
+  top: -170px;
   left: 650px;
 }
 
@@ -43,16 +44,18 @@ h4 {
   color: rgba(148, 154, 169, 0.8);
 }
 h1 {
-  margin: 10px 30px;
+  margin: 0 30px;
   font-size: 40px;
   font-weight: bolder;
   color: black;
 }
-.cityweather {
+.cityweathericon {
+  margin: 0;
+  max-width: 60px;
+  display: inline;
   position: relative;
-  top: -60px;
-  left: 375px;
-  font-size: 60px;
+  top: -55px;
+  left: 600px;
 }
 .temperature {
   display: inline;
@@ -60,8 +63,17 @@ h1 {
   color: black;
   font-weight: 500;
   position: relative;
-  top: -70px;
-  right: -610px;
+  top: -45px;
+  left: 400px;
+}
+.stick {
+  display: inline;
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  top: -45px;
+  left: 422px;
 }
 
 span a {
@@ -69,15 +81,18 @@ span a {
   text-decoration: none;
   font-size: 25px;
   position: relative;
-  top: -70px;
-  right: -610px;
+  top: -45px;
+  left: 420px;
 }
 span a:hover {
   color: #343cee;
 }
 
 .additionalinformation {
-  margin: -60px 600px 0 30px;
+  display: inline;
+  position: relative;
+  left: 30px;
+  top: -30px;
 }
 
 .windValue {
@@ -95,9 +110,13 @@ span a:hover {
 
 hr {
   border: 2px solid #343dee;
+  margin-top: 0;
 }
 p {
   margin: 0;
+}
+ul {
+  display: inline;
 }
 li {
   font-size: 15px;
@@ -106,7 +125,7 @@ li {
 }
 div .col-2 {
   position: relative;
-  left: 70px;
+  left: 65px;
   right: 70px;
   font-size: 20px;
   font-weight: 700;
@@ -126,3 +145,4 @@ a {
   text-decoration: none;
   color: #343cee;
 }
+

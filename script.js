@@ -5,17 +5,22 @@ function weather(response) {
   let cityHumiditychange = document.querySelector(".humidityValue");
   let cityPressurechange = document.querySelector(".pressureValue");
   let cityWindchange = document.querySelector(".windValue");
+  celsiusTemp = response.data.main.temp;
   let cityTemp = Math.round(response.data.main.temp);
   let cityHum = Math.round(response.data.main.humidity);
   let cityPres = Math.round(response.data.main.pressure);
   let cityWind = response.data.wind.speed;
   let cityNamechange = document.querySelector("h1");
   let cityName = response.data.name;
+  let cityIcon = document.querySelector("#weather-icon");
+  let cityIconplace = response.data.weather[0].icon;
+  let iconUrl = `http://openweathermap.org/img/wn/${cityIconplace}@2x.png`;
   cityNamechange.innerHTML = cityName;
   cityTempchange.innerHTML = cityTemp;
   cityHumiditychange.innerHTML = `${cityHum}%`;
   cityPressurechange.innerHTML = `${cityPres} hPa`;
   cityWindchange.innerHTML = `${cityWind} m/s`;
+  cityIcon.setAttribute("src", iconUrl);
 }
 
 function searchInput(event) {
@@ -29,13 +34,33 @@ function searchInput(event) {
 let searchcity = document.querySelector("#searchbutton");
 searchcity.addEventListener("submit", searchInput);
 
+function showFarenheit(event) {
+  event.preventDefault();
+  let farenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let tempshow = document.querySelector("#temperature");
+  tempshow.innerHTML = Math.round(farenheitTemp);
+}
+
+function showCelsi(event) {
+  event.preventDefault();
+  let tempshow = document.querySelector("#temperature");
+  tempshow.innerHTML = Math.round(celsiusTemp);
+}
+let farenheit = document.querySelector("#farenheit");
+farenheit.addEventListener("click", showFarenheit);
+
+let celsi = document.querySelector("#celsi");
+celsi.addEventListener("click", showCelsi);
+
+let celsiusTemp = null;
+
 let date = new Date();
 let days = date.getDay();
 let day = [
   "Sunday",
   "Monday",
   "Tuesay",
-  "Wednsrday",
+  "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
@@ -57,20 +82,3 @@ function currentposition() {
 }
 let gps = document.querySelector(".gpsButton");
 gps.addEventListener("click", currentposition);
-
-//function changeFerenheit(event) {
-//event.preventDefault();
-//let changeTemp = document.querySelector(".temperature");
-//changeTemp.innerHTML = 88;
-//}
-
-//let changeUnit = document.querySelector("#farenheit");
-//changeUnit.addEventListener("click", changeFerenheit);
-
-//function changeCelsi(event) {
-//event.preventDefault();
-//let changeTempFerenheit = document.querySelector(".temperature");
-//changeTempFerenheit.innerHTML = 20;
-//}
-//let changeUnitFerenheit = document.querySelector("#celsi");
-//changeUnitFerenheit.addEventListener("click", changeCelsi);

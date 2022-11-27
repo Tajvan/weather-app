@@ -25,68 +25,71 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="conteiner">
-      <div class="boarder">
-        <form id="searchbutton">
-          <input type="text" id="search-input" placeholder="Search" />
-        </form>
+    <div class="boarder">
+      <form id="searchbutton">
+        <input type="text" id="search-input" placeholder="Search" />
+      </form>
+      <i class="fa-solid fa-magnifying-glass button"></i>
+      <h4 id="today-day">Monday</h4>
+      <h1>Kyiv</h1>
 
-        <i class="fa-solid fa-magnifying-glass button"></i>
-        <h4 id="today-day">Monday</h4>
-        <h1>Kyiv</h1>
-        <button class="gpsButton" id="gps-input">
-          <i class="fa-solid fa-location-dot gps"></i>
-        </button>
-        <i class="fa-solid fa-cloud-sun-rain cityweather"></i>
-        <h4 class="temperature">20</h4>
-        <span class="units">
-          <a href="#" id="celsi">°C</a>
-          <a href="#" id="farenheit">|°F</a>
-        </span>
-        <div class="additionalinformation">
-          <p>
-            <li class="wind">Wind <span class="windValue">120 m/s</span></li>
-            <li class="pressure">
-              Pressure <span class="pressureValue">120 hPa</span>
-            </li>
-            <li class="humidity">
-              Humidity <span class="humidityValue">120%</span>
-            </li>
-          </p>
+      <button class="gpsButton" id="gps-input">
+        <i class="fa-solid fa-location-dot gps"></i>
+      </button>
+      <h4 class="temperature" id="temperature">20</h4>
+      <span class="units">
+        <a href="#" id="celsi" class="activ">°C</a>
+        <span class="stick">|</span>
+        <a href="#" id="farenheit">°F</a>
+      </span>
+      <img src="" alt="" class="cityweathericon" id="weather-icon" />
+      <span class="additionalinformation">
+        <ul>
+          <li class="wind">Wind <span class="windValue">120 m/s</span></li>
+          <li class="pressure">
+            Pressure <span class="pressureValue">120 hPa</span>
+          </li>
+          <li class="humidity">
+            Humidity <span class="humidityValue">120%</span>
+          </li>
+        </ul>
+      </span>
+      <hr />
+      <div class="row">
+        <div class="col-2">
+          Tuesday
+          <li>15°-20°</li>
+          <i class="fa-regular fa-sun nexttemp"></i>
         </div>
-        <hr />
-        <div class="row">
-          <div class="col-2">
-            Tuesday
-            <li>15°-20°</li>
-            <i class="fa-regular fa-sun nexttemp"></i>
-          </div>
-          <div class="col-2">
-            Wednesday
-            <li>15°-20°</li>
-            <i class="fa-solid fa-cloud-rain nexttemp"></i>
-          </div>
-          <div class="col-2">
-            Thursday
-            <li>15°-20°</li>
-            <i class="fa-regular fa-sun nexttemp"></i>
-          </div>
-          <div class="col-2">
-            Friday
-            <li>15°-20°</li>
-            <i class="fa-regular fa-sun nexttemp"></i>
-          </div>
-          <div class="col-2">
-            Saturday
-            <li>15°-20°</li>
-            <i class="fa-solid fa-cloud nexttemp"></i>
-          </div>
+        <div class="col-2">
+          Wednesday
+          <li>15°-20°</li>
+          <i class="fa-solid fa-cloud-rain nexttemp"></i>
+        </div>
+        <div class="col-2">
+          Thursday
+          <li>15°-20°</li>
+          <i class="fa-regular fa-sun nexttemp"></i>
+        </div>
+        <div class="col-2">
+          Friday
+          <li>15°-20°</li>
+          <i class="fa-regular fa-sun nexttemp"></i>
+        </div>
+        <div class="col-2">
+          Saturday
+          <li>15°-20°</li>
+          <i class="fa-solid fa-cloud nexttemp"></i>
         </div>
       </div>
     </div>
+
     <div class="coder">
       Coded by
-      <a href="https://github.com/Tajvan/weather-app" target="_blank"
+      <a
+        href="https://github.com/Tajvan/weather-app"
+        target="_blank"
+        class="kseniia"
         >Kseniia</a
       >
     </div>
